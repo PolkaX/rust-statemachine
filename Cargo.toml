@@ -1,0 +1,10 @@
+[package]
+name = "rust-statemachine"
+version = "0.1.0"
+authors = ["PolkaX <https://github.com/PolkaX>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+shrev = { git = "https://github.com/PolkaX/shrev-rs" }
