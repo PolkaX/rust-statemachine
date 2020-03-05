@@ -1,16 +1,15 @@
 // Copyright 2020 PolkaX
 
 mod event;
-mod handle;
+mod handler;
 mod state_machine;
+#[cfg(test)]
+mod test;
 
-pub use event::{Event, EventError};
-pub use state_machine::{StateMachine};
+pub use event::{Event, EventError, EventRet, EventType};
+pub use handler::Handler;
+pub use state_machine::StateMachine;
 
 pub trait Planner {
     fn plan(&self, events: &[Event]);
 }
-
-
-#[cfg(test)]
-mod tests {}
