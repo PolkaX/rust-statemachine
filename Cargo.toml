@@ -8,3 +8,5 @@ edition = "2018"
 
 [dependencies]
 shrev = { git = "https://github.com/PolkaX/shrev-rs" }
+filecoin-proofs-api = { git = "https://github.com/polkax/rust-filecoin-proofs-api" }
+cid = { git = "https://github.com/PolkaX/rust-ipfs", package = "rust-cid", branch = "filecoin-master", features = ["serde_support"] }
